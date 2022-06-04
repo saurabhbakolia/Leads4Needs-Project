@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --blue_btn_color:#4834d4;
+    --gray_btn_color:#f1f2f6;
+    --alert_bg_color:#e4f1fe;
+    --light_blue_color:#59abe3;
+    --icon_color:#546de5;
+    --text_color:#ccc;
+    --white_bg_color:#F9F9F9;
+}
+
+/* ############################ utility classes ############ */
+
+#container{
+    width:90%;
+    margin:20px auto;
+}
+
+button{
+    background:transparent;
+    border:none;
+    border:1px solid black;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:70px;
+    margin-block-end:100px;
+}
+.navbar > div{
+    box-shadow: 0px 1px 8px 0px rgba(196, 192, 192, 0.5);
+    border-radius: 6px;
+    height:100%;
+}
+
+.nav_items> div > ul{
+    background-color:var(--white_bg_color);
+    box-shadow: 0px 1px 8px 0px rgba(196, 192, 192, 0.5);
+    border-radius: 6px;
+    margin-inline:10px;
+}
+
+.nav_items{
+    display:flex;
+    width:90%;
+    justify-content:space-around;
+    align-items: center;
+}
+
+ul > li{
+    list-style:none;
+}
+
+.nav_item > ul{
+    display:flex;
+    align-items: center;
+    padding:4px 12px;
+}
+
+.nav_item > ul > li{
+    padding-inline:5px;
+    color:var(--text_color);
+}
+
+li > i{
+    color:var(--icon_color);
+}
+
+.blue_btn button{
+    padding:24px;
+    /* background:transparent;
+    border:none; */
+    margin-inline:10px;
+}
+
+/* ####################### section styling ################### */
+.section{
+    margin-block:100px;
+}
+section{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+
+
+
+/* ################## job_alert styling ########### */
+.job_alert{
+    background-color:var(--alert_bg_color);
+    display:flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    width:280px;
+    padding:20px;
+}
+
+.job_alert h2{
+    padding-block-end:4px;
+    font-size:18px;
+}
+
+.job_alert p{
+    font-size:14px;
+    color:var(--text_color);
+    margin-block-end:40px;
+}
+
+.job_alert input{
+    border:none;
+    padding:10px;
+    border-radius: 5px;
+    margin-block-end:20px;
+}
+
+.job_alert button{
+    border:none;
+    text-align:left;
+}
+
+
+/* ######################## articles-styling ##################### */
+
+article{
+    display: flex;
+    flex-direction:column;
+}
+
+article div > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-block-end:10px;
+    width:100%;
+
+}
+
+article > div > ul > li > img{
+    width:50px;
+    height:50px;
+}
+
+article div h3{
+    font-size:18px;
+    /* margin-block-end:5px; */
+}
+
+article div p{
+    font-size:14px;
+    color:var(--text_color);
+    margin-block:10px;
+}
+
+article div span{
+    /* margin-inline:10px; */
+    padding:6px;
+    background-color:var(--light_blue_color);
+    border-radius:2px;
+    font-size:12px;
+}
+
+.span_div{
+    margin-block:10px;
+}
+
+article div{
+    display:flex;
+    justify-content:space-between;
+}
+
+article div button{
+    border:none;
+    padding:10px 20px;
+}
